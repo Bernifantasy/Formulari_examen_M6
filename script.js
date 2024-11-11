@@ -1,6 +1,6 @@
 function start() {
-    const text = document.getElementById("text").value;
-    const caracter = document.getElementById("caracter").value;
+    const text = document.getElementById("text").value.toLowerCase();
+    const caracter = document.getElementById("caracter").value.toLowerCase();
 
     if (text.split(" ").length < 2) {
         document.getElementById("resultats").innerHTML = "<p>El text ha de tenir com a minim 2 paraules.</p>";
